@@ -32,3 +32,17 @@ else:
             pairs.append(lists[i])
             pairs.append(complement)
     print(pairs)
+
+#3rd Solution
+#Run time - O(n) or Linear and much elegant looking
+pairs = []
+complements = []
+if not lists:
+    print("Empty list")
+else:
+    for i in lists:
+        complement = total - i
+        if complement in lists and i not in pairs:
+            pairs.append(i)
+            pairs.append(complement)
+    print(pairs)
