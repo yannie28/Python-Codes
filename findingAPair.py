@@ -34,7 +34,7 @@ else:
     print(pairs)
 
 #3rd Solution
-#Run time - O(n) or Linear and much elegant looking
+#Run time - O(n) or Linear and much elegant looking than solution no 2
 pairs = []
 complements = []
 if not lists:
