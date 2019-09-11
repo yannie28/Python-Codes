@@ -3,7 +3,7 @@
 #find all the pair of numbers in the given list that when added is equal to the given sum
 
 lists = [1,2,3,4,5] #given list
-total = 7 #given sum
+total = 8 #given sum
 
 #1st Solution
 #Run time - O(n^2) or Quadratic
@@ -22,7 +22,6 @@ else:
 #2nd Solution
 #Run time - O(n) or Linear
 pairs = []
-complements = []
 if not lists:
     print("Empty list")
 else:
@@ -35,14 +34,14 @@ else:
 
 #3rd Solution
 #Run time - O(n) or Linear and much elegant looking than solution no 2
+#should get a pair of number from different position or index
 pairs = []
-complements = []
 if not lists:
     print("Empty list")
 else:
     for i in lists:
         complement = total - i
-        if complement in lists and i not in pairs:
+        if complement in lists and i not in pairs and lists.index(complement) != lists.index(i):
             pairs.append(i)
             pairs.append(complement)
     print(pairs)
