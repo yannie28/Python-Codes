@@ -1,6 +1,6 @@
 #this program checks if the number is Prime or not
 #used theorem: if both a and b is greater than the square root of n, then a*b is greater than n
-#hence, there should be one factor that is less than the square root of n
+#hence, there should be one factor that is less than or equal to the square root of n
 
 import math
 
