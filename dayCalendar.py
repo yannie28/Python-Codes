@@ -19,6 +19,7 @@ def daysInMonth(year,month): #return no of days in a month
             days[1] = 29 #changing no of days of february
         return days[month-1]
 
+#1st solution using daysInMonth()
 def dayCalendar(year,month,day):
     expectedDays = daysInMonth(year, month)
     total = 0
@@ -26,5 +27,14 @@ def dayCalendar(year,month,day):
         for i in range(month):
             total += daysInMonth(year,i+1) #summation of no of days but with excess of the no of days of the given month
         return total-expectedDays%day #less the excess
+
+
+#2nd solution
+def dayCalendar(year,month,day):
+    days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if year >= 1582 and month < 13 and month > 0 and day > 0 and day < 32: #check validity of the input
+        if isLeapYear(year):
+            days[1] = 29 #changing no of days of february
+        return sum(days[:month]) - days[month-1]%day
 
 print(dayCalendar(2012,1,31))
