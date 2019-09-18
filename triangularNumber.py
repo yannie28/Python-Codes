@@ -22,7 +22,7 @@ print("Maximum height of the triangle:", i-1)
 print("Excess of",number%(total-i),end="\n\n")
 
 #Solution no 2
-#Run time: O(1) or Constant
+#Run time: O(sqrt(n)) or Square Root
 #number = (n(n+1))/2
 answer = "Not a Triangular Number"
 n = (-1+math.sqrt(1+4*2*number))/2 #solving for n using quadratic formula
