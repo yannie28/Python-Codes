@@ -2,6 +2,7 @@
 
 #!/usr/bin/env python3 
 
+#This is a doc string. The above comment is caled shabang or hashpling
 """ module.py - an example of Python module """
 
 __counter = 0
