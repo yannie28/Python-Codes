@@ -184,6 +184,3 @@ import platform
 #python_implementation() -> returns type of python
 #python_version_tuple() -> returns version of python
 
-#EXCEPTIONS
-#ZeroDivisionError -> number divide by zero, IndexError -> index non existing, 
-#ValueError -> expects an integer but enters a string or something similar, 
