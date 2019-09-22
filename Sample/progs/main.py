@@ -1,6 +1,6 @@
 # main.py
 from sys import path
-path.append("..\\modules")
+path.append('A:\\GitHub\\Python-Codes\\Sample\\modules')
 
 import module
 
