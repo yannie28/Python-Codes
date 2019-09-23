@@ -1,8 +1,11 @@
 #EXCEPTIONS
 #ZeroDivisionError -> number divide by zero, 
 #IndexError -> index non existing, 
-#ValueError -> expects an integer but enters a string or something similar, 
+#ValueError -> correct type but incorrect value, ex. int(String) - input 'dog' - correct String type but erroneous value, empty value
 #AssertionError -> uses the assert keyword
+#TypeError -> data type error, assignment operator in tuple, expects an integer but enters a string
+#NameError -> if the variable is not defined
+
 
 def readint(prompt, min, max):
     
@@ -18,5 +21,3 @@ def readint(prompt, min, max):
     return number
 
 v = readint("Enter a number from -10 to 10: ", -10, 10)
-
-print("The number is:", v)
