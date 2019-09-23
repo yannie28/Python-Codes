@@ -184,3 +184,55 @@ import platform
 #python_implementation() -> returns type of python
 #python_version_tuple() -> returns version of python
 
+# print("a", "b", "c", sep="sep")
+
+# tup = (0,1)
+# tup = tup[0] + tup[1]
+
+# print("The number is:", v)
+# b = "a".center(6) == "  a   "
+# print(b)
+
+#Common Functions
+#int()
+#str
+#float()
+#list()
+#dict()
+#tuple()
+#pow()
+#sum()
+#min()
+#max()
+
+#String common methods
+#String.index("String"|Character) -> returns the position of the argument, not safe
+#String.capitalize() -> returns a new "String" with the capitalized first character
+#String.center(int,symbol) -> returns a new "String" - center the String by inserting the symbol at both ends of the String, 
+# odd number will be inserted at the end
+#String.endswitch("String") -> returns True|False if the "String" is found at the END of the String
+#String.startswitch("String") -> returns True|False if the "String" is found at the START of the String
+#String.find("String"|Character, start, end-1) -> returns the position of the FIRST found argument from Start to End-1, 
+# safe because it returns -1 if not found
+#String.rfind("String"|Character, start, end-1) -> returns the position of the LAST found argument from Start to End-1, 
+# safe because it returns -1 if not found
+#String.isalnum() -> returns True|False if the String only has characters or digits (no symbols and spaces)
+#String.isalpha() -> returns True|False if the String only has characters (no symbols, spaces, and digits)
+#String.isdigit() -> returns True|False if the String only has digits (no symbols, spaces, and characters)
+#String.islower() -> returns True|False if the String is in lowercase
+#String.isupper() -> returns True|False if the String is in uppercase
+#String.isspace() -> returns True|False if the String is a space
+#String.join(List of "Strings") -> returns a new "String" which is the combined "Strings" from List with the String as the separator
+#String.lower() -> returns a new "String" with all lowercase characters
+#String.upper() -> returns a new "String" with all uppercase characters
+#String.title() -> returns a new "String" with capitalized first letter of every word
+#String.swapcase() -> returns a new "String" with swapped case - lower to upper and vice versa
+#String.strip() | String.strip("String"|Character") -> returns a newly created string formed from the original one by 
+# removing all LEADING and TRAILING whitespaces or given Character
+#String.lstrip() | String.lstrip("String"|Character") -> returns a newly created string formed from the original one by 
+# removing all LEADING whitespaces or given Character
+#String.rstrip() | String.rstrip("String"|Character") -> returns a newly created string formed from the original one by 
+# removing all TRAILING whitespaces or given Character
+#String.replace("Source", "Replacement") -> returns a new String in which all occurrences of the first argument | "Source"
+# have been replaced by the second argument | "Replacement"
+#String.split("Separator" | Default = " ") -> returns a list with the splitted String - removes the "Separator"
