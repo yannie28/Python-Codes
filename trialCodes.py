@@ -194,16 +194,18 @@ import platform
 # print(b)
 
 #Common Functions
-#int()
-#str
-#float()
-#list()
-#dict()
-#tuple()
-#pow()
-#sum()
-#min()
-#max()
+#int("Data Type") -> converts to int
+#str("Data Type") -> converts to string
+#float("Data Type") -> converts to float
+#list("Data Type") -> converts to list
+#dict("Data Type") -> converts to dict
+#tuple("Data Type") -> converts to tuple
+#pow(x,y) -> x raise to y
+#sum("Iterable of numbers", start=0) -> returns the sum + start
+#min("Iterable of numbers" and a string) -> returns the minimum element
+#max("Iterable of numbers" and a string) -> returns the maximum element
+#ord("Character") -> returns the code point given a character
+#chr("Code point") -> returns the corresponding character given a code point
 
 #String common methods
 #String.index("String"|Character) -> returns the position of the argument, not safe
