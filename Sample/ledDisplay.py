@@ -47,6 +47,7 @@ def ledDisplay(number):
             3: ['# #', '  #', '#  ', '  #', '  #', '  #', '# #', '  #', '# #', '  #'],
             4: ['###', '  #', '###', '###', '  #', '###', '###', '  #', '###', '###']}
 
+
     try:
         assert number > -1
         for i in led:
@@ -58,5 +59,5 @@ def ledDisplay(number):
     except AssertionError:
         print("Please insert positive integer")
 
-ledDisplay(123)
+ledDisplay(input("Enter number: "))
 
