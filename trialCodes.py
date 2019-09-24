@@ -239,5 +239,9 @@ import platform
 # have been replaced by the second argument | "Replacement"
 #String.split("Separator" | Default = " ") -> returns a list with the splitted String - removes the "Separator"
 
-lines = [x for x in range(5)]
-print(lines)
+# a = "-70009"
+# print(a.lstrip("-07"))
+# print(a)
+
+
+    
