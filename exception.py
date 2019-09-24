@@ -1,6 +1,7 @@
 #EXCEPTIONS
 #ZeroDivisionError -> number divide by zero, 
-#IndexError -> index non existing, 
+#IndexError -> index non existing
+#KeyError -> key non existing
 #ValueError -> correct type but incorrect value, ex. int(String) - input 'dog' - correct String type but erroneous value, empty value
 #AssertionError -> uses the assert keyword
 #TypeError -> data type error, assignment operator in tuple, expects an integer but enters a string
