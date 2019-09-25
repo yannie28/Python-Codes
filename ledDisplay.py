@@ -49,7 +49,7 @@ def ledDisplay(number):
 
 
     try:
-        assert number > -1
+        assert int(number) > -1
         for i in led:
             for j in str(number):
                 print(led[i][int(j)], end=" ")
