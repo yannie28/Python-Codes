@@ -11,6 +11,7 @@ def encrypt(message,shift):
     for i in message:
         if i.isalpha():
             sum = ord(i) + shift
+            print(ord(i))
             if sum >= 123:
                 answer += chr(sum-122+96)
             elif sum >= 91 and ord(i) < 97:
