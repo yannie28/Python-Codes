@@ -20,13 +20,13 @@ def daysInMonth(year,month): #return no of days in a month
         return days[month-1]
 
 #1st solution using daysInMonth()
-def dayCalendar(year,month,day):
-    expectedDays = daysInMonth(year, month)
-    total = 0
-    if expectedDays and expectedDays >= day and day > 0: #check if the day is valid and expectedDays is not empty
-        for i in range(month):
-            total += daysInMonth(year,i+1) #summation of no of days but with excess of the no of days of the given month
-        return total-expectedDays%day #less the excess
+# def dayCalendar(year,month,day):
+#     expectedDays = daysInMonth(year, month)
+#     total = 0
+#     if expectedDays and expectedDays >= day and day > 0: #check if the day is valid and expectedDays is not empty
+#         for i in range(month):
+#             total += daysInMonth(year,i+1) #summation of no of days but with excess of the no of days of the given month
+#         return total-expectedDays%day #less the excess
 
 
 #2nd solution
@@ -37,4 +37,4 @@ def dayCalendar(year,month,day):
             days[1] = 29 #changing no of days of february
         return sum(days[:month]) - days[month-1]%day
 
-print(dayCalendar(2012,1,31))
+print(dayCalendar(2012,3,28))
