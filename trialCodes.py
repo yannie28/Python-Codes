@@ -239,6 +239,19 @@ import platform
 # have been replaced by the second argument | "Replacement"
 #String.split("Separator" | Default = " ") -> returns a list with the splitted String - removes the "Separator"
 
+#Object Oriented Programming - functions
+#hasattr(Class | Object, String name) -> checks if the argument has the corresponding String attribute
+#getattr(Class | Object, String name) -> gets the value of the String in the Class of Object
+#setattr(Class | Object, String name, Value) -> sets the value of the attribute String from the Class | Object
+#isinstance(Object, Data type) -> returns True|False if the object is a Data Type
+#type(Data) -> returns the Class or the data type of the Data
+
+#Object Oriented Programming - pre-equipped attributes
+#class.__dict__ | obj.__dict__ -> returns the instance variables
+#class.__name__ -> returns the name of the class
+#class.__module__ | obj.__module__ -> returns the name of the module which contains the definition of the class
+#class.__bases__ -> returns the tuple that contains classes (not class names) which are direct superclasses for that class.
+
 # a = "-70009"
 # print(a.lstrip("-07"))
 # print(a)
