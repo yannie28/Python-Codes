@@ -1,3 +1,4 @@
+#Arianne Tan
 def mySplit(strings, separator=" "):
     
     lists = []

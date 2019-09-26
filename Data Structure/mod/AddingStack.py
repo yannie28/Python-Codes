@@ -1,3 +1,4 @@
+#Arianne Tan
 #!/usr/bin/env python3 
 
 '''This is an AddingStack overriding the Stack class - uses inheritance'''

@@ -1,10 +1,11 @@
+#Arianne Tan
 import math
 #check if the positive number is a triangular number (Summation of i to n where i is 0) and output n (maximum height of the triangle)
 #Input=0; Output=True
 #Input=8; Output=False
 #Input=10; Output=True
 
-number = 11#given
+number = 11 #given
 print("Given number:",number,end="\n\n")
 
 #Solution no 1

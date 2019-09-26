@@ -1,4 +1,4 @@
-#Arianne Tan - 9/9/2019
+#Arianne Tan
 
 #bubble sort in increasing order
 lists = [2,3,4,6,5]

@@ -1,4 +1,4 @@
-#Arianne Tan - 9/9/2019
+#Arianne Tan
 #printing myList in reverse order
 
 myList = [10, 1, 8, 3, 5]

@@ -1,3 +1,4 @@
+#Arianne Tan
 #this program returns the corresponding number of day given the year, month, day
 #input: function(2000,12,31); output: 366
 #input: function(2019,1,1); output: 1

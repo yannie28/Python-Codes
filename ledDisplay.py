@@ -1,3 +1,4 @@
+#Arianne Tan
 #1st solution
 # digits = [  '1111110',  # 0
 # 	        '0110000',	# 1
