@@ -110,15 +110,15 @@
 # print(d3)
 # print((d1,d2))
 
-# colors = {
-#     "white" : (255, 255, 255),
-#     "grey"  : (128, 128, 128),
-#     "red"   : (255, 0, 0),
-#     "green" : (0, 128, 0)
-#     }
+colors = {
+    "white" : (255, 255, 255),
+    "grey"  : (128, 128, 128),
+    "red"   : (255, 0, 0),
+    "green" : (0, 128, 0)
+    }
 
-# for col, rgb in colors.items():
-#     print(col, ":", rgb)
+for col, rgb in colors.items():
+    print(col, ":", rgb)
 
 # def fun(a=1,b=4):
 #     return a*b
@@ -255,6 +255,7 @@ import platform
 #__init__(self): -> contructor
 #__str__(): -> overriding this method in a class will return a value when the object is printed (print(obj))
 # a=Class(); print(a)
+#super() -> get the superclass
 
 
 #Introspection vs Reflection
