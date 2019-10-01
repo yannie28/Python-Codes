@@ -110,15 +110,15 @@
 # print(d3)
 # print((d1,d2))
 
-colors = {
-    "white" : (255, 255, 255),
-    "grey"  : (128, 128, 128),
-    "red"   : (255, 0, 0),
-    "green" : (0, 128, 0)
-    }
+# colors = {
+#     "white" : (255, 255, 255),
+#     "grey"  : (128, 128, 128),
+#     "red"   : (255, 0, 0),
+#     "green" : (0, 128, 0)
+#     }
 
-for col, rgb in colors.items():
-    print(col, ":", rgb)
+# for col, rgb in colors.items():
+#     print(col, ":", rgb)
 
 # def fun(a=1,b=4):
 #     return a*b
@@ -257,14 +257,26 @@ import platform
 # a=Class(); print(a)
 #super() -> get the superclass
 
-
 #Introspection vs Reflection
 #Introspection - examine the properties and methods of the given class during runtime
 #Reflection - manipulate the properties and methods of the given class during runtime
 
-# a = "-70009"
-# print(a.lstrip("-07"))
-# print(a)
+#Generators
+#is an object that is an iterable that can be formed using the iterator protocol or the yield keyword
+#x = (y for y in range(5)) <- generator object
 
+#Lambda function
+#an 'anonymous function' useful for function parameters; lambda parameter:expression
+#map(function-lambda,iteratable objects) -> returns a generator object with the result of the function applied using the iterable objects
+#filter(function-lambda, iterable objects) -> returns a generator object with the result of the function applied using the iterable objects
+# provided the function returns True
 
-    
+#Closure
+#a function object that remembers the values in an enclosing scope even if they are not present in memory
+# def a(x):
+#     def b(y):
+#         return y*x #remembers the value of x even if x is deleted from memory
+#     return b #return a closure function
+
+# sample = a(1)
+# print(sample(3))
