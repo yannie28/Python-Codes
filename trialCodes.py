@@ -281,13 +281,13 @@ import platform
 # sample = a(1)
 # print(sample(3))
 
-avail = {1:1, 2:2}
-def a(avail, length):
-    if length == 0:
-        return 1
-    newavail = avail.copy()
-    del newavail[1]
-    print(newavail)
-    a(newavail, length-1)
+# avail = {1:1, 2:2}
+# def a(avail, length):
+#     if length == 0:
+#         return 1
+#     newavail = avail.copy()
+#     del newavail[1]
+#     print(newavail)
+#     a(newavail, length-1)
 
-a(avail,2)
+# a(avail,2)
