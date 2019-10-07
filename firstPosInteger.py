@@ -4,7 +4,7 @@
 # The array can contain duplicates and negative numbers as well.
 
 #Solution 1
-#O(nlogn) - running time because of some maximum sorting algorithm running time
+#O(nlogn) - running time because of some maximum sorting algorithm
 def firstPos(given):
     given.sort()
     min = 0
@@ -35,6 +35,6 @@ def firstPos2(given):
         if i > 0: #check the first positive number in the list
             return given.index(i)+1 #return the first missing positive integer
 
-    return len(given)+1
+    return len(given)+1 #len plus 1 because of index 0
     
 print(firstPos2([0,0,0,3,2,1,8,9,5,10,4,-1,6,7]))
