@@ -1,4 +1,4 @@
-#Arianne Tan - 9/9/2019
+#Arianne Tan
 
 #find all the pair of numbers in the given list that when added is equal to the given sum
 
@@ -20,7 +20,7 @@ else:
     print(pairs)
 
 #2nd Solution
-#Run time - O(n) or Linear
+#Run time - O(n^2) or Quadratic since the ave running time of finding an element in a list is O(n)
 pairs = []
 if not lists:
     print("Empty list")
@@ -33,7 +33,7 @@ else:
     print(pairs)
 
 #3rd Solution
-#Run time - O(n) or Linear and much elegant looking than solution no 2
+#Run time - O(n^2) or Quadratic but much elegant looking than solution no 2
 #should get a pair of number from different position or index
 pairs = []
 if not lists:
@@ -45,3 +45,5 @@ else:
             pairs.append(i)
             pairs.append(complement)
     print(pairs)
+
+#can be improved using hash tables
