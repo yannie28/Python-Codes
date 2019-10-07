@@ -1,4 +1,5 @@
 #Arianne Tan
+#creating a user defined method for split()
 def mySplit(strings, separator=" "):
     
     lists = []
