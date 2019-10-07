@@ -17,8 +17,8 @@ def longestSubstringK(k, s):
                     output[2] = value #if yes, change the max to value
                     output[1] = (start, start+value) #this is the index of the substring
                     start = sum(lenStrings[:k]) #change the start of the new substring since there is a new character incoming
-                del strings[:k] #delete the values from the left side of the strings and lenStrings so a new character can come in the 'window'
-                del lenStrings[:k]
+                del strings[:len(lenStrings)-k+1] #delete the values from the left side of the strings and lenStrings so a new character can come in the 'window'
+                del lenStrings[:len(lenStrings)-k+1]
                 output[0] = strings[:] #the output[0] which is the controller of distinct characters will copy the value of the strings
             strings.append(x) #append the character in the strings
             lenStrings.append(1) #add a value of 1 to it
@@ -27,9 +27,9 @@ def longestSubstringK(k, s):
     if value > output[2]: #if greater than max, change the output[]
         output[2] = value
         output[1] = (start, start+value)
-    if len(output[0]) == k: #check if there is enough unique substring from output[0]
+    if len(''.join(set(s[output[1][0]:output[1][1]]))) == k: #check if there is enough unique substring from the indices
         return "Max substring is: " + s[output[1][0]:output[1][1]] + " with length " + str(output[2])
     else: #else, not enough substring
         return "Not enough substring"
 
-print(longestSubstringK(2, "aaaacbbbddd"))
+print(longestSubstringK(2, "abababccd"))
