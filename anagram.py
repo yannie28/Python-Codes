@@ -3,6 +3,8 @@
 # treat upper- and lower-case letters as equal;
 # spaces are not taken into account during the check - treat them as non-existent
 
+#O(n^2) in worst time since the ave cost of finding an element in a list is O(n)
+#can be improved using hash tables
 def anagram(message1, message2):
     answer = False
 
