@@ -1,4 +1,7 @@
 #Arianne Tan
+# Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.
+# For example, given s = "abcba" and k = 2, the longest substring with k distinct characters is "bcb".
+
 #1st solution
 #O(n) running time and O(n) space time
 #with window sliding algorithm but solved the problem of repeating valid distinct characters so the starting pointer can skip unnecessary indices
@@ -6,7 +9,7 @@ def longestSubstringK(k, s):
     output = [[], (0,0), 0] #unique chars, indices, length of string(max)
     strings, lenStrings = [], [] #initialize the characters and length of the characters; ex. [a,b,a,b,a,b],[1,1,2,3,2,1] 
     start = 0 #starting pointer
-    
+
     for x in s: #traverse the string
         if x in output[0] and x == strings[-1]: #check if the character is already in output[0] and the last character in strings[], if yes...
             lenStrings[len(lenStrings)-1] += 1 #increment the frequency of that character by 1
