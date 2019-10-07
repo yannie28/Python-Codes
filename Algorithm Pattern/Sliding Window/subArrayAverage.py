@@ -22,4 +22,23 @@ def subArrayAverage(array, k):
 
 print(subArrayAverage([1, 3, 2, 6, -1, 4, 1, 8, 2], 5))
 
+#2nd solution
+#O(n) running time using the sliding window algorithm
+
+def subArrayAverage2(array, k):
+    total, start = 0, 0 #initialize the total, start, windowSize
+    output = [] #this is the output result
+
+    for i in range(len(array)): #traverse the array
+        total += array[i] #add the current value to the value
+
+        if i >= k-1: #check if the windowSize is already equal to k
+            output.append(total/k) #average the 5 elements and append it to the output result
+            total -= array[start] #remove the start pointer from the total to be reused by other sub arrays
+            start += 1 #move the start pointer by 1
+            
+    return output
+
+print(subArrayAverage2([1, 3, 2, 6, -1, 4, 1, 8, 2], 5))
+
 
