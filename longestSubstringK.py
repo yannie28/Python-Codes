@@ -1,7 +1,7 @@
 #Arianne Tan
 #1st solution
-#O(n) running time
-#with window sliding algorithm 
+#O(n) running time and O(n) space time
+#with window sliding algorithm but solved the problem of repeating valid distinct characters so the starting pointer can skip unnecessary indices
 def longestSubstringK(k, s):
     output = [[], (0,0), 0] #unique chars, indices, length of string(max)
     strings, lenStrings = [], [] #initialize the characters and length of the characters; ex. [a,b,a,b,a,b],[1,1,2,3,2,1] 
