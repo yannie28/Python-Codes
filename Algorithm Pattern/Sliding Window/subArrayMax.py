@@ -3,7 +3,7 @@
 #array = [1,2,4,8,16], k = 3; output: 28
 #array = [2,5,3,8], k = 2; output: 11
 
-#1st solution
+#1st solution - contributed by Vonn Bareng
 #O(n^2) running time
 def sub(array, k):
     x = len(array)-k #no of sub arrays
@@ -20,6 +20,7 @@ print(sub([90,2,4,70], 3))
 
 #2nd solution
 #O(n) running time
+#O(1) space
 def subArraySum(array, k):
     total, max, start = 0,0,0
 
