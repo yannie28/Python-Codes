@@ -291,3 +291,29 @@ import platform
 #     a(newavail, length-1)
 
 # a(avail,2)
+
+def function(S):
+    windowLength, start, counter = 0, 0, 0
+    maximum = 0
+
+    for i in range(len(S)):
+
+        windowLength += 1 
+
+        if S[start] == S[i]:
+            counter += 1
+        else:
+            counter = 1
+            start = i
+        
+        if counter == 3:
+            windowLength = 0
+            start = i - 1
+        maximum = max(windowLength, maximum)
+    if windowLength == 0:
+        maximum -= 1
+    return maximum
+
+print(function("bbbaa"))
+        
+
