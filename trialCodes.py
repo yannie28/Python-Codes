@@ -292,28 +292,44 @@ import platform
 
 # a(avail,2)
 
-def function(S):
-    windowLength, start, counter = 0, 0, 0
-    maximum = 0
+# def function(S):
+#     windowLength, start, counter = 0, 0, 0
+#     maximum = 0
 
-    for i in range(len(S)):
+#     for i in range(len(S)):
 
-        windowLength += 1 
+#         windowLength += 1 
 
-        if S[start] == S[i]:
-            counter += 1
-        else:
-            counter = 1
-            start = i
+#         if S[start] == S[i]:
+#             counter += 1
+#         else:
+#             counter = 1
+#             start = i
         
-        if counter == 3:
-            windowLength = 0
-            start = i - 1
-        maximum = max(windowLength, maximum)
-    if windowLength == 0:
-        maximum -= 1
-    return maximum
+#         if counter == 3:
+#             windowLength = 0
+#             start = i - 1
+#         maximum = max(windowLength, maximum)
+#     if windowLength == 0:
+#         maximum -= 1
+#     return maximum
 
-print(function("bbbaa"))
+# print(function("bbbaa"))
+
+
+# n = 4
+# m = 20
+
+# sum1 = 0
+# sum2 = 0
+# for i in range(m+1):
+#     if i%n == 0:
+#         sum1 += i
+#     elif i%n != 0:
+#         sum2 += i
+# print(sum2-sum1)
+
+for i in range(0,11,2):
+    print(i)
         
 
