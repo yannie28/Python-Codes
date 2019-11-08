@@ -208,7 +208,7 @@ import platform
 #chr("Code point") -> returns the corresponding character given a code point
 
 #String common methods
-#String.index("String"|Character) -> returns the position of the argument, not safe
+#String.index("String"|Character) -> returns the position of the FIRST seen argument, not safe
 #String.capitalize() -> returns a new "String" with the capitalized first character
 #String.center(int,symbol) -> returns a new "String" - center the String by inserting the symbol at both ends of the String, 
 # odd number will be inserted at the end
